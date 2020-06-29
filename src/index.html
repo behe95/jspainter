@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS Painter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../dist/main.css">
+  </head>
+  <body>
+
+
+
+    <div class="wrapper bg-warning p-3">
+      <div class="card-header text-center">
+        <h5 class="card-text">JS Painter</h5>
+      </div>
+      <div class="tools">
+        <button class="btn btn-primary" id="btnNewCanvas" type="button" name="button">New Canvas</button>
+        <button class="btn btn-primary" id="btnLine" type="button" name="button">Line</button>
+        <button class="btn btn-primary" id="btnCircle" type="button" name="button">Circle</button>
+        <button class="btn btn-primary" id="btnRectangle" type="button" name="button">Rectangle</button>
+        <button class="btn btn-primary" id="btnPen" type="button" name="button">Pen</button>
+        <button class="btn btn-primary" id="btnEraser" type="button" name="button">Eraser</button>
+        <div class="form-group">
+          <select class="form-control" id="brushSize" class="brushSize" name="brushSize">
+            <option>Brush Size</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+      </div>
+      <div id="picker"></div>
+      <div id="selectedColor"></div>
+    </div>
+
+    <canvas name="canvas" id="canvas"></canvas>
+    <script src="../dist/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
